@@ -51,4 +51,8 @@ public class PlantService {
 		return this.repo.existsById(id);
 		
 	}
+	
+	public List<Plant> findByName(String name){
+		return this.repo.findByName(name);
+	}
 }
