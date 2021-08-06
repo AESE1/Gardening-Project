@@ -33,7 +33,7 @@ public class PlantController {
 	
 	@PostMapping("/create")
 	public ResponseEntity<Plant> createPlant(@RequestBody Plant plant){
-		return new ResponseEntity<Plant>(this.service.createFruit(plant), HttpStatus.CREATED);
+		return new ResponseEntity<Plant>(this.service.createPlant(plant), HttpStatus.CREATED);
 	}
 	
 	@GetMapping("/findbyid/{id}")
@@ -43,7 +43,7 @@ public class PlantController {
 		
 	@PutMapping("update/{id}")
 	public ResponseEntity<Plant> update (@PathVariable("id") Long id, @RequestBody Plant plant){
-		return new ResponseEntity<Plant>(this.service.updateFruit(id, plant), HttpStatus.ACCEPTED);
+		return new ResponseEntity<Plant>(this.service.updatePlant(id, plant), HttpStatus.ACCEPTED);
 	}
 		
 	@DeleteMapping("/delete/{id}")
