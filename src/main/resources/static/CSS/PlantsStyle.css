@@ -1,0 +1,22 @@
+body {
+    
+    background-color: rgb(15, 92, 8);
+    opacity: 5.0;
+    width: 1260px;
+    height: 530px;
+    text-align:center;
+    }
+
+h1{
+    color: white;
+}
+
+h2{
+    color: white;
+    font-size: 24px;
+    text-align:left
+}
+
+p{
+    color: white;
+}

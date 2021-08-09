@@ -1,17 +1,20 @@
-let fishtable = document.querySelector('#fishtable');
+const PtTable = `<div class="plant">
+				<table style="width:80%">
+			    <tr>
+				<th>ID</th>
+				<th>Name</th>
+				<th>Price</th>
+                <th>Size</th>
+                <th>Variegated</th>
+				<tr>`;
+const PbTable = `</table>
+				</div>`;
 
-function getData(url, callback) {
-    let jsonData;
-    fetch(url)
-      .then((response) => response.json())
-      .then((data) => {(jsonData = data);
-         console.log(data)})
-      .then(() => callback(jsonData))
-      .catch((error) => console.log(error));
-  }
-
-getData('http://localhost:9002/read', createTable);
-
-function createTable(tableData) {
-    var table = document.createElement('table');
-    var tableBody = document.createElement('tbody');
+function showDB() {
+    const body = document.body;
+    const para = document.createElement('p');
+    body.append(para);
+    fetch("http://localhost:9002/read")
+.then(response => response.json())
+.then(data => console.log(data))
+}
