@@ -31,3 +31,31 @@ function useData(arrOfObjs) {
     div.appendChild(plantContainer);
 }
 
+let form = document.querySelector('#addfishform');
+let addBtn = document.querySelector('#addfish');
+addBtn.addEventListener("click", function (event) {
+  postData(event)
+});
+
+function postData(event) {
+  event.preventDefault();
+  let fname = document.querySelector('#fishname').value;
+  let fcolour = document.querySelector('#fishcolour').value;
+  let flength = document.querySelector('#fishlength').value;
+  let fweight = document.querySelector('#fishweight').value;
+  fetch("http://localhost:9001/create", {
+    method: 'post',
+    headers: {
+      "Content-type": "application/json"
+    },
+    body: JSON.stringify(
+      {
+        "name": fname,
+        "colour": fcolour,
+        "length": flength,
+        "weight": fweight
+      })
+  })
+    .then(response => console.log(response))
+    .catch(error => console.log(error));
+  window.location.reload();

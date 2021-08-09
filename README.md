@@ -10,6 +10,7 @@ CRUD testing through postman all passed. This is the reason id 5 is missing from
 
 What didn't go as planned?
 Configuration of the communication with my front end, there was a lot of trial and error involved.
+More time needed to manipulate CSS styling i.e. make carosel smaller, make text cleaner and easy to read etc...
 
 Possible improvements for future revisions of the project.
 
