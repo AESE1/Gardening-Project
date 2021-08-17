@@ -1,0 +1,6 @@
+com\natwest\gardeningproject\controller\PageController.class
+com\natwest\gardeningproject\GardeningProjectApplication.class
+com\natwest\gardeningproject\persistence\domain\Plant.class
+com\natwest\gardeningproject\service\PlantService.class
+com\natwest\gardeningproject\controller\PlantController.class
+com\natwest\gardeningproject\persistence\repo\PlantRepo.class

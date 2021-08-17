@@ -1,0 +1,26 @@
+body {
+    background-image: url("/garden1.jpeg");
+    background-size: cover;
+
+    
+    color: white;    
+}
+
+h1{
+    color: white; 
+    font-size: 12x arial;
+    background-color: rgb(238, 223, 13);
+}
+
+h2{
+    color:yellow
+}
+
+p{
+    color:yellow
+}
+
+h3{
+    color:rgb(238, 13, 69)
+}
+
