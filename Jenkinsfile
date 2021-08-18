@@ -7,7 +7,7 @@ pipeline {
 				sh 'mvn clean install'
 			}
 		}
-	stage(Run Jar) {
+	stage('Run Jar') {
 			steps{
 				sh 'ls'
 				sh 'java -jar target/GardeningProject-0.0.1-SNAPSHOT.jar &'
