@@ -10,7 +10,7 @@ pipeline {
 	stage('Run Jar') {
 			steps{
 				sh 'ls'
-				sh 'java -jar target/GardeningProject-0.0.1-SNAPSHOT.jar &'
+				sh 'bash deploy.sh'
 				}
 		}
 	}
