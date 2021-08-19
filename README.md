@@ -1,7 +1,5 @@
 # GardeningProject
 
-Newline
-
 How I expected the challenge to go.
 I feel I have a reasonable understanding of the material covered but I was very apprehensive about pulling everything together to create a complete project as this is my first time doing it.
 
