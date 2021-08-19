@@ -4,7 +4,7 @@ pipeline {
 		stage('Build Jar'){
 			steps{
 				sh 'ls'
-				sh 'mvn clean install'
+				sh 'bash build.sh'
 			}
 		}
 	stage('Run Jar') {
